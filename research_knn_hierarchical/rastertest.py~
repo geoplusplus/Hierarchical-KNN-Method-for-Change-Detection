@@ -1,0 +1,28 @@
+'''
+Created on Jan 19, 2016
+
+@author: jackzhang
+'''
+import gdal
+import numpy
+import matplotlib.pyplot as plt 
+
+
+#filename = "/Users/jackzhang/Google Drive/Research/ChangeDetection/data/600_col_s_out.txt"
+
+
+for i in range(2,9):
+  filename = "/home/jay1204/Documents/research_knn_hierarchical/plot/600_col_s_out_" + str(i)+".txt"
+  src_ds = gdal.Open(filename)
+  # myArray  = numpy.loadtxt(filename, skiprows=7)
+  myArray  = numpy.loadtxt(filename)
+  print myArray
+  im_handle = plt.imshow(myArray,vmin=-1, vmax=1,cmap="Greys")
+  figure = plt.gcf()
+  # figure.set_size_inches(6,4.5)
+  plt.colorbar()
+  figure.set_size_inches(48,3)
+  #figure.savefig('/Users/jackzhang/Google Drive/Research/ChangeDetection/data/600.png',dpi=600)
+  outimage = "/home/jay1204/Documents/research_knn_hierarchical/plot/knn_result_600_9600_"+str(i)+".png"
+  figure.savefig(outimage,dpi=600)
+  plt.clear()
