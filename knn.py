@@ -1,7 +1,10 @@
 """
 create on Jan 20, 2016
 
-@author: Zexo Chen
+This file is to find the knn for each time series in the dataset. And majority voting is used to assign
+each time series a label based on its knn.
+
+@author: Zexi Chen
 """
 
 import math

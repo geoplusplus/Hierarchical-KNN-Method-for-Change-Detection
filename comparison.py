@@ -1,3 +1,4 @@
+# this file is used to compare whether two txt files are identical
 import sys
 
 def main():
