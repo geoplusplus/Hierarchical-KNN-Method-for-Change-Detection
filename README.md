@@ -1,8 +1,8 @@
 # Hierarchical-KNN-Method-for-Change-Detection
 
-a novel time series similarity based change detection framework for identifying inter-annual changes by exploiting phenological properties of growing crops from satellite time series imagery.
+a novel time series similarity based change detection framework for identifying inter-annual changes by exploiting phenological properties of growing crops from satellite time series imagery. \\
 
-The workflow of the algorithm:
+The workflow of the algorithm: \\
 1.Perform random sampling from the two relevant years of original dataset to get a representative sample of the data in order to reduce computation.
 2.Build a cluster hierarchy model using hierarchical clustering on the training data with the chosen inter-cluster similarity measures.
 3.Pick the optimal number of clusters and cluster groupings through dendrogram exploration.
