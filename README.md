@@ -4,7 +4,7 @@ a novel time series similarity based change detection framework for identifying 
 
 The workflow of the algorithm: 
 
-++1.Perform random sampling from the two relevant years of original dataset to get a representative sample of the data in order to reduce computation.
+..1.Perform random sampling from the two relevant years of original dataset to get a representative sample of the data in order to reduce computation.
 
 ++2.Build a cluster hierarchy model using hierarchical clustering on the training data with the chosen inter-cluster similarity measures.
 
